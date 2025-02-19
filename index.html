@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,6 +14,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Font Awesome -->
     <script
@@ -26,7 +32,48 @@
       @theme {
         --color-clifford: #da373d;
       }
+      .inter {
+        font-family: "Inter", serif;
+      }
+      .brand {
+        color: #263238;
+      }
+      .d_grey {
+        color: #4d4d4d;
+      }
+      .green {
+        color: #4caf4f;
+      }
     </style>
   </head>
-  <body></body>
+  <body class="inter">
+    <header>
+      <nav class="max-w-screen-xl mx-auto my-3">
+        <!-- Parent Div -->
+        <div class="flex justify-between">
+          <div class="flex space-x-2 items-center">
+            <img class="h-[1.875rem]" src="images/Icon.svg" alt="logo" />
+            <h1 class="text-3xl font-bold brand">Nexcent</h1>
+          </div>
+          <!-- Items -->
+          <div class="flex gap-4 items-center">
+            <ul class="d_grey flex gap-4 font-medium">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <button
+              class="bg-[#4caf4f] hover:bg-[#348b35] text-white py-4 px-9 rounded-[3px] font-medium"
+            >
+              Register Now <i class="fa-solid fa-arrow-right ml-1"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
