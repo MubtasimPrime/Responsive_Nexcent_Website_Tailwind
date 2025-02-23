@@ -57,7 +57,7 @@
   </head>
   <body class="inter">
     <header>
-      <nav class="max-w-screen-xl mx-auto my-3">
+      <nav class="max-w-screen-xl mx-auto my-3 px-2 lg:px-0">
         <!-- Parent Div -->
         <div class="flex justify-between">
           <div class="flex space-x-2 items-center">
@@ -66,7 +66,7 @@
           </div>
           <!-- Items -->
           <div class="flex gap-4 items-center">
-            <ul class="d_grey flex gap-4 font-medium">
+            <ul class="d_grey lg:flex gap-4 font-medium hidden">
               <li><a href="#">Home</a></li>
               <li><a href="#">Features</a></li>
               <li><a href="#">Community</a></li>
@@ -74,9 +74,27 @@
               <li><a href="#">Pricing</a></li>
             </ul>
             <button
-              class="bg-[#4caf4f] hover:bg-[#348b35] text-white py-4 px-9 rounded-[3px] font-medium"
+              class="bg-[#4caf4f] hover:bg-[#348b35] text-white py-4 px-9 rounded-[3px] font-medium hidden lg:block"
             >
               Register Now <i class="fa-solid fa-arrow-right ml-1"></i>
+            </button>
+          </div>
+          <!-- Bar Icon -->
+          <div class="sm:hidden">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-11 w-11 text-xl stroke-current px-2 py-2 border border-transparent rounded-full hover:bg-[#4cbb4c]"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
             </button>
           </div>
         </div>
@@ -86,30 +104,33 @@
       <section class="silver">
         <!-- Parent Div -->
         <div
-          class="max-w-screen-xl mx-auto flex justify-between items-center py-16"
+          class="max-w-screen-xl mx-auto flex flex-col-reverse lg:flex-row justify-between items-center lg:py-16 py-2 px-2 lg:px-0"
         >
           <!-- Text Div -->
-          <div>
-            <h1 class="font-semibold text-[2.8125rem] leading-[3.3125rem] mt-3">
+          <div class="flex flex-col items-center lg:block">
+            <h1
+              class="font-semibold lg:text-[2.8125rem] text-4xl lg:leading-[3.3125rem] leading-[2.8125rem] lg:mt-3 text-center lg:text-start"
+            >
               <span class="d_grey">Lessons and insights</span><br />
               <span class="green">from 8 years</span>
             </h1>
-            <p class="mb-6 p-color">
+            <p class="lg:mb-6 mb-3 p-color text-center lg:text-right">
               Where to grow your business as a photographer: site or social
               media?
             </p>
             <button
-              class="bg-[#4caf4f] hover:bg-[#348b35] text-white py-4 px-9 rounded-[3px] font-medium"
+              class="bg-[#4caf4f] hover:bg-[#348b35] text-white lg:py-4 lg:px-9 py-2 px-5 rounded-[3px] font-medium mb-2 lg:mb-0"
             >
               Register
             </button>
           </div>
 
           <!-- Image Div -->
-          <div>
+          <div class="mt-2 lg:mt-0">
             <img src="images/banner-logo.png" alt="" />
           </div>
         </div>
+        <!-- Dot div -->
         <div
           class="max-w-screen-xl mx-auto pb-3 text-[10px] flex justify-center gap-2"
         >
@@ -121,10 +142,12 @@
     </header>
     <main>
       <!-- Client Part -->
-      <section class="max-w-screen-xl mx-auto mt-7">
+      <section class="max-w-screen-xl mx-auto mt-7 px-2 lg:px-0">
         <!-- Text part -->
         <div class="flex flex-col items-center">
-          <h1 class="d_grey text-[1.625rem] font-semibold leading-7 mb-4">
+          <h1
+            class="d_grey text-[1.625rem] font-semibold leading-7 lg:mb-4 mb-2"
+          >
             Our Clients
           </h1>
           <p class="p-color">
@@ -132,7 +155,9 @@
           </p>
         </div>
         <!-- Client Image -->
-        <div class="flex justify-between mt-8 mb-8">
+        <div
+          class="lg:flex lg:justify-between lg:mt-8 mt-5 lg:mb-8 mb-5 grid grid-cols-4 justify-items-center gap-y-2"
+        >
           <a href="#"><img src="images/client-1.png" alt="client" /></a>
           <a href="#"><img src="images/client-2.png" alt="client" /></a>
           <a href="#"><img src="images/client-3.png" alt="client" /></a>
@@ -140,11 +165,14 @@
           <a href="#"><img src="images/client-5.png" alt="client" /></a>
           <a href="#"><img src="images/client-6.png" alt="client" /></a>
           <a href="#"><img src="images/client-7.png" alt="client" /></a>
+          <a class="lg:hidden" href="#"
+            ><img src="images/client-1.png" alt="client"
+          /></a>
         </div>
       </section>
 
       <!-- Community Part -->
-      <section class="max-w-screen-xl mx-auto mb-7">
+      <section class="max-w-screen-xl mx-auto mb-7 hidden">
         <!-- Heading div -->
         <div class="flex flex-col items-center text-center">
           <h1
@@ -205,7 +233,7 @@
       </section>
 
       <!-- Pixelgrade part -->
-      <section class="max-w-screen-xl mx-auto">
+      <section class="max-w-screen-xl mx-auto hidden">
         <!-- Main div -->
         <div class="flex items-center justify-between">
           <!-- Image div -->
@@ -237,7 +265,7 @@
       </section>
 
       <!-- Unsplash part -->
-      <section class="silver pt-10 pb-10">
+      <section class="silver pt-10 pb-10 hidden">
         <!-- Parent div -->
         <div class="flex items-center max-w-screen-xl mx-auto justify-between">
           <!-- Right content -->
@@ -315,7 +343,7 @@
       </section>
 
       <!-- Similar like pixelGrade -->
-      <section class="max-w-screen-xl mx-auto">
+      <section class="max-w-screen-xl mx-auto hidden">
         <!-- Main div -->
         <div class="flex items-center justify-between mb-9">
           <!-- Image div -->
@@ -350,7 +378,7 @@
       </section>
 
       <!-- Meet Customer part -->
-      <section class="silver pt-4 mb-8">
+      <section class="silver pt-4 mb-8 hidden">
         <div class="max-w-screen-xl mx-auto flex items-center justify-between">
           <!-- Image div -->
           <div class="w-full">
@@ -395,7 +423,7 @@
       </section>
 
       <!-- New Marketing Part -->
-      <section class="max-w-screen-xl mx-auto">
+      <section class="max-w-screen-xl mx-auto hidden">
         <!-- Heading text -->
         <div class="flex flex-col items-center">
           <h2
@@ -476,7 +504,7 @@
       </section>
 
       <!-- Demo Part -->
-      <section class="silver pb-6">
+      <section class="silver pb-6 hidden">
         <div class="flex flex-col items-center">
           <h1
             class="text-[#263238] text-[2.8125rem] font-semibold leadinf-[3.3125rem] mb-6 p-4 text-center"
@@ -491,7 +519,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-[#263238] text-white p-11">
+    <footer class="bg-[#263238] text-white p-11 hidden">
       <!-- Main div -->
       <div class="max-w-screen-xl mx-auto flex justify-between">
         <!-- 1 col -->
