@@ -395,14 +395,16 @@
       </section>
 
       <!-- Meet Customer part -->
-      <section class="silver pt-4 mb-8 hidden">
-        <div class="max-w-screen-xl mx-auto flex items-center justify-between">
+      <section class="silver pt-4 mb-8 px-2 lg:px-0">
+        <div
+          class="max-w-screen-xl mx-auto lg:flex items-center justify-between"
+        >
           <!-- Image div -->
-          <div class="w-full">
+          <div class="w-full flex justify-center lg:block">
             <img src="images/unsplash.png" alt="experience" />
           </div>
           <!-- text div -->
-          <div>
+          <div class="lg:w-full w-[85%] mx-auto">
             <p
               class="p-color text-[.75rem] mb-6 text-justify leading-[1.0625rem]"
             >
@@ -422,7 +424,9 @@
             <h4 class="text-[#89939E] text-xs">
               British Dragon Boat Racing Association
             </h4>
-            <div class="flex justify-between mt-8 mb-8">
+            <div
+              class="lg:flex lg:justify-between mt-8 mb-8 grid grid-cols-3 place-items-center gap-2"
+            >
               <a href="#"
                 ><img src="images/color-client-1.png" alt="client"
               /></a>
@@ -431,9 +435,12 @@
               <a href="#"><img src="images/client-4.png" alt="client" /></a>
               <a href="#"><img src="images/client-5.png" alt="client" /></a>
               <a href="#"><img src="images/client-6.png" alt="client" /></a>
-              <button class="green font-semibold leading-5 text-[14px]">
-                Meet all customers <i class="fa-solid fa-arrow-right ml-1"></i>
-              </button>
+              <div class="col-span-3">
+                <button class="green font-semibold leading-5 text-[14px]">
+                  Meet all customers
+                  <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
