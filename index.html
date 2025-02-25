@@ -447,7 +447,7 @@
       </section>
 
       <!-- New Marketing Part -->
-      <section class="max-w-screen-xl mx-auto hidden">
+      <section class="max-w-screen-xl mx-auto px-2 lg:px-0">
         <!-- Heading text -->
         <div class="flex flex-col items-center">
           <h2
@@ -456,7 +456,7 @@
             Caring is the new marketing
           </h2>
           <p
-            class="p-color leading-[1rem] text-xs max-w-[27.5rem] text-center mb-2"
+            class="p-color leading-[1rem] text-xs max-w-[27.5rem] text-center mb-2 lg:w-full w-[85%]"
           >
             The Nextcent blog is the best place to read about the latest
             membership insights, trends and more. See who's joining the
@@ -465,7 +465,7 @@
           </p>
         </div>
         <!-- Main Cards -->
-        <div class="grid grid-cols-3 mt-3">
+        <div class="grid grid-cols-1 lg:grid-cols-3 mt-3">
           <!-- 1 -->
           <div class="flex flex-col items-center">
             <div>
@@ -528,10 +528,10 @@
       </section>
 
       <!-- Demo Part -->
-      <section class="silver pb-6 hidden">
+      <section class="silver pb-6">
         <div class="flex flex-col items-center">
           <h1
-            class="text-[#263238] text-[2.8125rem] font-semibold leadinf-[3.3125rem] mb-6 p-4 text-center"
+            class="text-[#263238] lg:text-[2.8125rem] text-3xl font-semibold leadinf-[3.3125rem] lg:mb-6 mb-3 p-4 text-center"
           >
             Ready to see our <br />product in action?
           </h1>
@@ -543,11 +543,13 @@
         </div>
       </section>
     </main>
-    <footer class="bg-[#263238] text-white p-11 hidden">
+    <footer class="bg-[#263238] text-white p-11">
       <!-- Main div -->
-      <div class="max-w-screen-xl mx-auto flex justify-between">
+      <div
+        class="max-w-screen-xl mx-auto lg:flex lg:justify-between grid grid-cols-1"
+      >
         <!-- 1 col -->
-        <div>
+        <div class="mb-3 lg:mb-0">
           <div class="flex gap-3 mb-7">
             <img class="h-[1.875rem]" src="images/footer-icon.svg" alt="logo" />
             <h1 class="text-3xl font-bold">Nexcent</h1>
@@ -570,7 +572,7 @@
           </ul>
         </div>
         <!-- 2 col -->
-        <div class="flex justify-between gap-40">
+        <div class="lg:flex justify-between lg:gap-40 grid grid-cols-2 gap-5">
           <!-- Company part -->
           <div>
             <h1 class="font-semibold leading-5 text-[16px] mb-2">Company</h1>
